@@ -1,10 +1,10 @@
 <center><h1>Dossier de SVM et réseaux de neurones</h1></center>
 <p align="center">
-<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
+<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/iae.png" alt="Logo IAE.png" style="width:400px;"/>
 </p>
 
-#### Table of Contents
-[1. Préambule](#1-pr%C3%A9ambule)<br>
+#### Tableau des matières
+[1. Introduction](#1-pr%C3%A9ambule)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#11-iris-flower)<br>
 
 [2. Support Vecteur Machine](#2-support-vecteur-machine)<br>
