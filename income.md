@@ -1,4 +1,4 @@
-<center><h1> SVM sous Python</h1></center>
+<center><h1>Dossier de SVM et réseaux de neurones</h1></center>
 <p align="center">
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
 </p>
