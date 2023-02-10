@@ -4,25 +4,27 @@
 </p>
 
 #### Tableau des matières
-[1. Introduction](#1-pr%C3%A9ambule)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#11-iris-flower)<br>
+[1. Introduction](#1-introduction)<br>
 
-[2. Support Vecteur Machine](#2-support-vecteur-machine)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Presentation intuitive d'un SVM](#21-presentation-intuitive-dun-svm)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Calcul de la marge ](#22-calcul-de-la-marge)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Maximisation de la marge](#23-maximisation-de-la-marge)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.4 SVM LINEAIRE, HARDS MARGING VS SOFT MARGIN CLASSIFCATION](#24-svm-lineaire-hards-marging-vs-soft-margin-classifcation)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.5 SVM non liénaire](#25-svm-non-li%C3%A9naire)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5.1 Polynomial Kernel](#251-polynomial-kernel)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5.2 Similarity Features](#252-similarity-features)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Classification Multiclass pour les SVM](#26-classification-multiclass-pour-les-svm)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.6.1 Application classication multiclass, dataset MNIST ](#261-application-classication-multiclass-dataset-mnist)<br>
+[2. Analyse Exploratoire sur le jeu de Données (EDA)](#2-analyse-exploratoire-sur-le-jeu-de-donn%C3%A9es-(EDA))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Analyse sur les variables](#21-analyse-sur-les-variables)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[A) Analyse univariée](#A-analyse-univari%C3%A9e)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[B) Analyse multivariée](#B-analyse-multivari%C3%A9e)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Valeurs manquantes](#22-valeurs-manquantes)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Outliers](#23-outliers)<br>
 
-[3. SVM pour la régression](#3-svm-pour-la-r%C3%A9gression)<br>
-[4. Récapitulatif](#4-r%C3%A9capitulatif)<br>
+[3. Modélisation](#3-mod%C3%A9lisation)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[3.1 SVM](#31-svm)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1.1 Linear SVM](#311-linear-svm)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1.2 Non linear SVM](#312-non-linear-svm)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Réseaux de neurones avec Keras](#32-r%C3%A9seaux-de-neurones-avec-keras)<br>
+
+[4. Meilleur modèle et interprétation des résultats](#4-meilleur-mod%C3%A9le-et-interpr%C3%A9tation-des-r%C3%A9sultats)<br>
+
+[5. Conclusions](#5-conclusions)<br>
 
 
-## 1-Préambule
+## 1-Introduction
 
 Connaissez-vous le fameux jeu de données IRIS produit par Ronald Fisher en 1936??  
 Si non, nous allons y remédier!  
