@@ -83,10 +83,13 @@ Grâce au tableau 1 et les histogrammes on peut visualiser la distribution des v
 Ensuite les variables qualitatives
 
 <ins>*Graphique 2 : Histogrammes des variables qualitatives*</ins>
-<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/bar.png" />
+<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/bar.png" style="width:750px;"/>
+
 *Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
 
-Après le graphique 2 on peut visualiser la distribution des variables en catégories. On peut constater, par exemple, que pour l'échantillon d'apprentissage, la grande majorité des employées sont salariés du secteur privé, et l'individu le plus courant est un homme blanc marié né aux États-Unis.
+Après le graphique 2 on peut visualiser la distribution des variables en catégories. On peut constater, par exemple, que pour l'échantillon d'apprentissage, la grande majorité des employées sont salariés du secteur privé, et l'individu le plus courant est un homme blanc marié né aux États-Unis. Vous pouvez trouver des rapports plus détaillées dans le dans le dossier stat_desc_reports de ce _repository_.
+
+Nous avons décidé aussi de transformer la variable __*native-country*__ pour une variable qui indique si un individu est né aux Etats-Unis ou à l'étranger. Nous faisons cela parce que nous pensons que cette division peut être plus intéressante que d'avoir tous les différents pays. Il peut être plus déterminant de savoir si quelqu'un est né aux Etats-Unis ou ailleurs que de savoir s'il est spécifiquement né au Bangladesh ou en Chine.
 
 Pour ce qui concerne à la variable du revenu, dans l'échantillon d'apprentissage on trouve que la distribution est la suivante :
 
@@ -97,6 +100,24 @@ Pour ce qui concerne à la variable du revenu, dans l'échantillon d'apprentissa
 Grâce au graphique 3 on peut dire que presque 76% de l'échantillon gagne 50 000 $ par année ou moins. Un tel déséquilibre pour la variable cible peut être problématique pour le processus de modélisation puisque les modèles que nous créons auront tendance à classer une observation dans la catégorie prédominante. Par conséquent, nous observerons peut-être des taux de faux négatifs.
 
 #### B) Analyse multivariée
+
+Dans cette partie on va analyser les corrélations entre variables à travers des matrices de corrélation. L'une des principales critiques de ce document est l'absence d'analyse de la corrélation entre les variables quantitatives et qualitatives, c'est-à-dire que seules les corrélations entre les variables d'un même type ont été prises en compte. L'absence de cette partie de l'analyse est principalement due au fait que nous n'avons pas réussi à coder ces corrélations.
+
+<ins>*Tableau 2 : Matrice de corrélation pour les variables quantitatives*</ins>
+.| __age__ |	__fnlwgt__ |	__education-num__ |	__capital-gain__ |	__capital-loss__ |	__hours-per-week__
+--- | --- | --- | --- | --- | --- | ---
+__age__ |	1.000000 |	-0.078141 |	0.066345 |	0.124948 |	0.058484 |	0.142907
+__fnlwgt__ |	-0.078141 |	1.000000 |	-0.035706 |	-0.006039 |	-0.006914 |	-0.021621
+__education-num__ |	0.066345 |	-0.035706 |	1.000000 |	0.119140 |	0.074749 |	0.167215
+__capital-gain__ |	0.124948 |	-0.006039 |	0.119140 |	1.000000 |	-0.066569 |	0.093322
+__capital-loss__ |	0.058484 |	-0.006914 |	0.074749 |	-0.066569 |	1.000000 |	0.059852
+__hours-per-week__ |	0.142907 |	-0.021621 |	0.167215 |	0.093322 |	0.059852 |	1.000000
+
+*Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
+
+<ins>*Graphique 4 : Corrélations significatives dans les variables quantitatives*</ins>
+<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/matcor.png" />
+*Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
 
 
 
