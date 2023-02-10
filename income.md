@@ -8,33 +8,54 @@
 #### Tableau des matières
 [1. Introduction](#1-introduction)<br>
 
-[2. Analyse Exploratoire sur le jeu de Données (EDA)](#2-analyse-exploratoire-sur-le-jeu-de-donn%C3%A9es-(EDA))<br>
+[2. Analyse Exploratoire des Données (EDA)](#2-analyse-exploratoire-des-données-eda)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Analyse sur les variables](#21-analyse-sur-les-variables)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[A) Analyse univariée](#A-analyse-univari%C3%A9e)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[B) Analyse multivariée](#B-analyse-multivari%C3%A9e)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[A) Analyse univariée](#a-analyse-univariée)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[B) Analyse multivariée](#b-analyse-multivariée)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Valeurs manquantes](#22-valeurs-manquantes)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Outliers](#23-outliers)<br>
 
-[3. Modélisation](#3-mod%C3%A9lisation)<br>
+[3. Modélisation](#3-modélisation)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[3.1 SVM](#31-svm)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1.1 Linear SVM](#311-linear-svm)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1.2 Non linear SVM](#312-non-linear-svm)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Réseaux de neurones avec Keras](#32-r%C3%A9seaux-de-neurones-avec-keras)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Réseaux de neurones avec Keras](#32-réseaux-de-neurones-avec-keras)<br>
 
-[4. Meilleur modèle et interprétation des résultats](#4-meilleur-mod%C3%A9le-et-interpr%C3%A9tation-des-r%C3%A9sultats)<br>
+[4. Meilleur modèle et interprétation des résultats](#4-meilleur-modèle-et-interprétation-des-résultats)<br>
 
 [5. Conclusions](#5-conclusions)<br>
 
 
-## 1-Introduction
+# 1. Introduction
 
 Les déterminants de la répartition des revenus ont toujours été en tête des questions économiques. Pourquoi deux individus perçoivent-ils des revenus différents ? Dans ce projet, nous voulons répondre à cette question, avec la particularité que nous classerons les revenus en deux types : inférieurs ou égaux à 50 mille dollars par an, et supérieurs à cela. Les données proviennent du Machine Learning Repository de l'Université de Californie, Irvine : Census Income Data Set (UC Irvine). Nous allons essayer de créer un modèle de classification capable de donner une réponse précise pour savoir si un individu avec des caractéristiques données aura un revenu supérieur ou inférieur à $50k/an. Nous utilisons deux méthodologies : Les modèles SVM et les réseaux de neurones avec la librairie Keras. 
-L'article a la structure suivante : une première partie dans laquelle nous effectuons une analyse exploratoire des données (statistiques descriptives, corrélations, valeurs manquantes et valeurs aberrantes) ; une deuxième partie dans laquelle nous créons des modèles avec les données, une troisième partie où nous sélectionnons le modèle le plus performant et interprétons ses résultats, et une dernière partie où nous fournissons nos idées et critiques sur l'analyse.
+L'article a la structure suivante : une première partie dans laquelle nous effectuons une analyse exploratoire des données (statistiques descriptives, corrélations, valeurs manquantes et outliers) ; une deuxième partie dans laquelle nous créons des modèles avec les données, une troisième partie où nous sélectionnons le modèle le plus performant et interprétons ses résultats, et une dernière partie où nous fournissons nos idées et critiques sur l'analyse.
 
-## 1.1-Iris flower
+# 2. Analyse Exploratoire des Données (EDA)
 
-    
-![iris_photo](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png)
+## 2.1 Analyse sur les variables
+
+#### A) Analyse univariée
+
+#### B) Analyse multivariée
+
+## 2.2 Valeurs manquantes
+
+## 2.3 Outliers
+
+# 3. Modélisation
+
+## 3.1 SVM
+
+### 3.1.1 Linear SVM
+
+### 3.1.2 Non linear SVM
+
+## 3.2 Réseaux de neurones avec Keras
+
+#4. Meilleur modèle et interprétation des résultats
+
+#5. Conclusions
 
 On affiche le jeu de données Iris pour voir comment les informations sont représentées.  
 Les 3 espèces ont été recodées de la manière suivante :
