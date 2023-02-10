@@ -57,11 +57,48 @@ Concernant l'ensemble des variables explicatives, 8 d'entre elles sont qualitati
 - __*sex*__ : Sexe
 - __*native-country*__ : Pays d'origine
 
-
+Nous allons ensuite représenter leur distribution par des histogrammes (diagrammes à barres) pour les variables explicatives quantitatives (qualitatives) et un graphique de camembert pour la variable à expliquer. Ensuite, nous allons dessiner les matrices de corrélation.
 
 #### A) Analyse univariée
 
+<ins>*Tableau 1 : Statistiques descriptives pour les variables quantitatives*</ins>
+. | age | fnlwgt | education-num | capital-gain | capital-loss | hours-per-week
+--- | --- | --- |--- | --- | --- | ---
+__mean__ | 	38.6 |	189778.4 |	10.1 |	1077.6 |	87.3 |	40.4
+__std__ |	13.6 |	105550.0 |	2.6 |	7385.3 |	403.0 |	12.3
+__min__ |	17.0 |	12285.0 |	1.0 |	0.0 |	0.0 |	1.0
+__25%__ |	28.0 |	117827.0 |	9.0 |	0.0 |	0.0 |	40.0
+__50%__ |	37.0 |	178356.0 |	10.0 |	0.0 |	0.0 |	40.0
+__75%__ |	48.0 |	237051.0 |	12.0 |	0.0 |	0.0 |	45.0
+__max__ |	90.0 |	1484705.0 |	16.0 |	99999.0 |	4356.0 |	99.0
+
+*Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
+
+<ins>*Graphique 1 : Histogrammes des variables quantitatives*</ins>
+<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/hist.png" />
+*Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
+
+Grâce au tableau 1 et les histogrammes on peut visualiser la distribution des variables quantitatives. Par exemple, on peut tirer des conclusions telles que : l'âge moyen des individus dans l'échantillon est d'environ 39 ans, ces individus ont étudié une moyenne de 10 ans, plus de 75% de l'échantillon n'ont pas de gains ou de pertes en capital,...
+
+Ensuite les variables qualitatives
+
+<ins>*Graphique 2 : Histogrammes des variables qualitatives*</ins>
+<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/bar.png" />
+*Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
+
+Après le graphique 2 on peut visualiser la distribution des variables en catégories. On peut constater, par exemple, que pour l'échantillon d'apprentissage, la grande majorité des employées sont salariés du secteur privé, et l'individu le plus courant est un homme blanc marié né aux États-Unis.
+
+Pour ce qui concerne à la variable du revenu, dans l'échantillon d'apprentissage on trouve que la distribution est la suivante :
+
+<ins>*Graphique 3 : Distribution de la variable cible*</ins>
+<img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/pierev.png" />
+*Source : Dossier de SVM et Réseaux de Neurones, Carles CERDÁ VILA*
+
+Grâce au graphique 3 on peut dire que presque 76% de l'échantillon gagne 50 000 $ par année ou moins. Un tel déséquilibre pour la variable cible peut être problématique pour le processus de modélisation puisque les modèles que nous créons auront tendance à classer une observation dans la catégorie prédominante. Par conséquent, nous observerons peut-être des taux de faux négatifs.
+
 #### B) Analyse multivariée
+
+
 
 ## 2.2 Valeurs manquantes
 
