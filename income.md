@@ -1,5 +1,7 @@
 <center><h1>Dossier de SVM et réseaux de neurones</h1></center>
 <p align="center">
+<center><h5>Carles CERDÁ VILA - M2 ECAP</h5></center>
+<p align="center">
 <img src="https://github.com/carlescvila/Dossier_SVM_et_reseaux_de_neurones/blob/main/img/iae.png" alt="Logo IAE.png" style="width:400px;"/>
 </p>
 
@@ -26,36 +28,8 @@
 
 ## 1-Introduction
 
-Connaissez-vous le fameux jeu de données IRIS produit par Ronald Fisher en 1936??  
-Si non, nous allons y remédier!  
-
-Nous pouvons accéder à ce dataset depuis sklearn avec le code suivant :
-
-```python
-from sklearn.datasets import load_iris
-import pandas as pd
-import numpy as np
-
-data = load_iris()
-
-# Array to Pandas DataFrame
-iris = pd.DataFrame(np.c_[data['data'],
-                          data['target']
-                         ],
-                    columns = data.feature_names + ['species']
-                   )
-
-iris['species'] = iris['species'].astype('int')
-```
-
-Le jeu de données Iris est un jeu de données regroupant 3 espèces de plantes :
-
-- La Setosa
-- La Versicolore
-- La Virginica
-
-Pour chaque plante nous avons mesuré en cm 4 caractéristiques.
-La longueur de ses pétales et sépales (visible sous la photo ci-dessous) ainsi que leur largeur.
+Les déterminants de la répartition des revenus ont toujours été en tête des questions économiques. Pourquoi deux individus perçoivent-ils des revenus différents ? Dans ce projet, nous voulons répondre à cette question, avec la particularité que nous classerons les revenus en deux types : inférieurs ou égaux à 50 mille dollars par an, et supérieurs à cela. Les données proviennent du Machine Learning Repository de l'Université de Californie, Irvine : Census Income Data Set (UC Irvine). Nous allons essayer de créer un modèle de classification capable de donner une réponse précise pour savoir si un individu avec des caractéristiques données aura un revenu supérieur ou inférieur à $50k/an. Nous utilisons deux méthodologies : Les modèles SVM et les réseaux de neurones avec la librairie Keras. 
+L'article a la structure suivante : une première partie dans laquelle nous effectuons une analyse exploratoire des données (statistiques descriptives, corrélations, valeurs manquantes et valeurs aberrantes) ; une deuxième partie dans laquelle nous créons des modèles avec les données, une troisième partie où nous sélectionnons le modèle le plus performant et interprétons ses résultats, et une dernière partie où nous fournissons nos idées et critiques sur l'analyse.
 
 ## 1.1-Iris flower
 
