@@ -29,11 +29,35 @@
 # 1. Introduction
 
 Les déterminants de la répartition des revenus ont toujours été en tête des questions économiques. Pourquoi deux individus perçoivent-ils des revenus différents ? Dans ce projet, nous voulons répondre à cette question, avec la particularité que nous classerons les revenus en deux types : inférieurs ou égaux à 50 mille dollars par an, et supérieurs à cela. Les données proviennent du Machine Learning Repository de l'Université de Californie, Irvine : Census Income Data Set (UC Irvine). Nous allons essayer de créer un modèle de classification capable de donner une réponse précise pour savoir si un individu avec des caractéristiques données aura un revenu supérieur ou inférieur à $50k/an. Nous utilisons deux méthodologies : Les modèles SVM et les réseaux de neurones avec la librairie Keras. 
+
 L'article a la structure suivante : une première partie dans laquelle nous effectuons une analyse exploratoire des données (statistiques descriptives, corrélations, valeurs manquantes et outliers) ; une deuxième partie dans laquelle nous créons des modèles avec les données, une troisième partie où nous sélectionnons le modèle le plus performant et interprétons ses résultats, et une dernière partie où nous fournissons nos idées et critiques sur l'analyse.
 
 # 2. Analyse Exploratoire des Données (EDA)
 
+Avant de créer un modèle ML, il faut comprendre les caractéristiques des données. Pour cette raison, on peut être amené à effectuer différentes analyses sur les variables, les valeurs manquantes et les points atypiques. Cette procédure permet de visualiser la distribution des données, les variables qui sont corrélées, les valeurs manquantes et les potentiels outliers. 
+
 ## 2.1 Analyse sur les variables
+
+L'ensemble de données initial est composé de 14 variables explicatives et d'une variable cible catégorique qui correspond au revenu. Ainsi, si une personne a un revenu supérieur à 50 000 dollars par an, cette variable prendra la valeur 1 ; 0 sinon. 
+
+Concernant l'ensemble des variables explicatives, 8 d'entre elles sont qualitatives et les 6 restantes sont quantitatives. La liste des variables est la suivante :
+
+- __*age*__ : Âge
+- __*fnlwgt*__ : Poids final estimé
+- __*education-num*__ : Années d'études
+- __*capital-gain*__ : Montant du capital acquis ($)
+- __*capital-loss*__ : Montant du capital perdu ($)
+- __*hours-per-week*__ : Nombre d'heures travaillées par semaine
+- __*workclass*__ : Classe ouvrière
+- __*education*__ : Niveau de diplôme
+- __*marital-status*__ : Etat civil
+- __*occupation*__ : Profession
+- __*relationship*__ : Type de relation
+- __*race*__ : Race
+- __*sex*__ : Sexe
+- __*native-country*__ : Pays d'origine
+
+
 
 #### A) Analyse univariée
 
@@ -53,9 +77,9 @@ L'article a la structure suivante : une première partie dans laquelle nous effe
 
 ## 3.2 Réseaux de neurones avec Keras
 
-#4. Meilleur modèle et interprétation des résultats
+# 4. Meilleur modèle et interprétation des résultats
 
-#5. Conclusions
+# 5. Conclusions
 
 On affiche le jeu de données Iris pour voir comment les informations sont représentées.  
 Les 3 espèces ont été recodées de la manière suivante :
